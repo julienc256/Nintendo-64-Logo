@@ -17,7 +17,13 @@ Here is a screeshot of the OpenSCAD interface :
 
 ![screenshot OpenSCAD](images/OpenSCAD_interface_800x600.png)
 
-Whereas POV-Ray (Persistence of Vision Raytracer) is a 3D rendering software based on the ray tracing technique. First released in 1991, it generates realistic 3D images from scene descriptions written in its dedicated scripting language. Free and open source, it is widely used in artistic, educational, and scientific projects. POV-Ray is renowned for its precision, flexibility, and ability to produce photorealistic images with advanced effects such as reflections, transparency, shadows, and procedural textures.
+Whereas POV-Ray (Persistence of Vision Raytracer) is a 3D rendering software based on the ray tracing technique.
+
+First released in 1991, it generates realistic 3D images from scene descriptions written in its dedicated scripting language.
+
+Free and open source, it is widely used in artistic, educational, and scientific projects.
+
+POV-Ray is renowned for its precision, flexibility, and ability to produce photorealistic images with advanced effects such as reflections, transparency, shadows, and procedural textures.
 
 Here is a screeshot of the POV-Ray interface :
 
@@ -25,29 +31,33 @@ Here is a screeshot of the POV-Ray interface :
 
 ## Nintendo64 logo modeled with OpenSCAD
 
-Le code source se trouve dans le fichier **N64_logo.scad**
+The source code is located in the file **N64_logo.scad**.
 
-Le fichier STL généré est le fichier **N64_logo.stl**
+The generated STL file is **N64_logo.stl**.
 
-Ouvrir le fichier source N64_logo.scad dans Openscad pour l'éditer, cliquer ensuite sur "Calculer le rendu (touche F6), puis sur Exporter comme STL (touche F7).
+To regenerate it : first open the source file **N64_logo.scad** in OpenSCAD.
 
-Vous pourrez ensuite importer le fichier STL dans un slicer comme PrusaSlicer, Cura ou autre slicer, pour impression 3D !
+Once the file opened, click on "Render" (F6 key) then "Export as STL" (F7 key).
 
-Ma modélisation est également disponible sur Thingiverse, voici le lien : https://www.thingiverse.com/thing:6908540
+You can then import the STL file into a slicer such as PrusaSlicer, Cura, Bambu Studio, Orca Slicer or any other slicer for 3D printing!
+
+My 3D modeling is also available on Thingiverse, here is the link : https://www.thingiverse.com/thing:6908540
 
 ## Nintendo64 logo modeled with POV-Ray
 
-Le code source se trouve dans le fichier **N64_logo.inc**
+The source code is located in the file **N64_logo.inc**.
 
-Pour utiliser le logo, il suffit, en début de script, d'importer le fichier par l'instruction #include N64_logo.inc
+To use the logo, first copy the **N64_logo.inc** in the Poy-RAY ini directory (typically /home/user/POV-Ray/v3.7/ini).
 
-2 fichier scenes pour exemple ont été ajoutés au repository :
+Once done, at the beginning of your POV-Ray script, add the instruction **#include "N64_logo.inc"**. That's all!
+
+2 example scenes files have been added to the repository :
 
 N64_logo_example01.pov
 
 N64_logo_example02.pov
 
-Voici ce que donne ces 2 exemples (ici au format 800x600) :
+Here is what these 2 examples give (here in 800x600 format) :
 
 ![N64_logo_example01](images/N64_logo_example01_800x600.png)
 
